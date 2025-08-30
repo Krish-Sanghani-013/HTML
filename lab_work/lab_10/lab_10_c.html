@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header */
+    .header {
+      background: red;
+      height: 80px;
+      text-align: center;
+      color: white;
+      line-height: 80px;
+      font-size: 24px;
+    }
+
+    /* Navigation (left) */
+    .nav {
+      background: darkblue;
+      width: 150px;
+      float: left;
+      height: 430px;
+      text-align: center;
+      color: white;
+      line-height: 400px;
+      font-size: 20px;
+    }
+
+    /* Right side (sidebar + extra box stacked) */
+    .right {
+      width: 150px;
+      float: right;
+    }
+
+    .sidebar {
+      background: green;
+      height: 230px;
+      text-align: center;
+      line-height: 200px;
+      color: white;
+      font-size: 20px;
+    }
+
+    .extra-box {
+      background: yellow;
+      height: 200px;
+      border-top: 2px solid black;
+      text-align: center;
+      line-height: 200px;
+      font-size: 16px;
+    }
+
+    /* Content */
+    .content {
+      background: yellow;
+      height: 430px;
+      margin-left: 150px;   /* leave space for nav */
+      margin-right: 150px;  /* leave space for right column */
+      text-align: center;
+      line-height: 400px;
+      font-size: 22px;
+      color: black;
+    }
+
+    /* Footer */
+    .footer {
+      background: deepskyblue;
+      height: 60px;
+      clear: both;
+      text-align: center;
+      line-height: 60px;
+      font-size: 20px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">Header</div>
+
+  <div class="nav">Navigation</div>
+
+  <div class="right">
+    <div class="sidebar">Sidebar</div>
+    <div class="extra-box">Extra Box</div>
+  </div>
+
+  <div class="content">Content</div>
+
+  <div class="footer">Footer</div>
+
+</body>
+</html>

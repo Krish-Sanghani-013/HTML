@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Group, Universal, and Descendant Selectors</title>
+    <style>
+        /* Universal selector */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        /* Group selector */
+        h1, p {
+            margin-bottom: 16px;
+            color: #2a4d69;
+        }
+        /* Descendant selector */
+        div p {
+            background-color: #e7eff6;
+            padding: 8px;
+            border-left: 4px solid #4b86b4;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Example</h1>
+    <br><br><br><br><br>
+    <p>This paragraph is styled by the group selector (h1, p).</p>
+    <br><br><br><br><br>
+    <div>
+        <p>This paragraph is inside a div and styled by the descendant selector (div p).</p>
+    </div>
+    <br><br><br><br><br>
+    <section>
+        <p>This paragraph is not inside a div, so only the group selector applies.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation Example</title>
+</head>
+<body>
+    <h1>Simple Contact Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email1">Email:</label>
+        <input type="email" id="email1" name="email1" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Registration Form with Validation</h1>
+    <form>
+        <label for="reg-email">Email:</label>
+        <input type="email" id="reg-email" name="reg-email" required><br><br>
+
+        <label for="age">Age (18-99):</label>
+        <input type="number" id="age" name="age" min="18" max="99" required><br><br>
+
+        <label for="password">Password (at least 8 chars, 1 number, 1 uppercase):</label>
+        <input type="password" id="password" name="password"
+               pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}" 
+               title="At least 8 characters, 1 uppercase letter, and 1 number" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>

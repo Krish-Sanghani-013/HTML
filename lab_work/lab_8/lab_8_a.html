@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML5 Layout & Contact Form</title>
+</head>
+<body>
+    <header>
+        <h1>My Simple Website</h1>
+        <p>Welcome to a demo of semantic HTML5 tags and a contact form.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <article>
+                <h2>Home</h2>
+                <p>This is the homepage section, structured using semantic tags.</p>
+            </article>
+        </section>
+        <section id="about">
+            <article>
+                <h2>About</h2>
+                <p>This section provides information about the website.</p>
+            </article>
+        </section>
+        <section id="contact">
+            <article>
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+
+                    <label for="date">Preferred Contact Date:</label>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Simple Website</p>
+    </footer>

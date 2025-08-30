@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Create Account</title>
+  </head>
+  <body style="margin:0; font-family:Arial, Helvetica, sans-serif; background:#5fa7ad;">
+    <!-- Simple centered card -->
+    <div style="max-width:820px; margin:40px auto; background:#ffffff; border-radius:10px; box-shadow:0 0 12px rgba(0,0,0,0.15);">
+      <!-- Header -->
+      <div style="background:#e9f6f5; padding:18px; border-top-left-radius:10px; border-top-right-radius:10px;">
+        <h2 style="margin:0; text-align:center; color:#555;">Create Account</h2>
+      </div>
+
+      <!-- Form body -->
+      <div style="padding:20px 22px;">
+        <!-- row 1 -->
+        <div style="display:flex; gap:18px; margin-bottom:14px;">
+          <div style="flex:1;">
+            <label style="color:#01a79d; font-weight:bold;">First name *</label><br/>
+            <input type="text" placeholder="enter your first name" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;" />
+          </div>
+          <div style="flex:1;">
+            <label style="color:#01a79d; font-weight:bold;">Last name</label><br/>
+            <input type="text" placeholder="enter your last name" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;" />
+          </div>
+        </div>
+
+        <!-- row 2 -->
+        <div style="margin-bottom:14px;">
+          <label style="color:#01a79d; font-weight:bold;">Email *</label><br/>
+          <input type="email" placeholder="enter your email" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;" />
+        </div>
+
+        <!-- row 3 -->
+        <div style="display:flex; gap:18px; margin-bottom:14px;">
+          <div style="flex:1;">
+            <label style="color:#01a79d; font-weight:bold;">Password *</label><br/>
+            <input type="password" placeholder="enter your password" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;" />
+          </div>
+          <div style="flex:1;">
+            <label style="color:#01a79d; font-weight:bold;">Confirm Password *</label><br/>
+            <input type="password" placeholder="enter your password again" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;" />
+          </div>
+        </div>
+
+        <!-- row 4 -->
+        <div style="display:flex; gap:18px; margin-bottom:10px;">
+          <div style="flex:1;">
+            <div style="margin-bottom:8px;">
+              <span style="color:#01a79d; font-weight:bold;">Gender:</span>
+              <label><input type="radio" name="g" /> Male</label>
+              <label style="margin-left:10px;"><input type="radio" name="g" /> Female</label>
+            </div>
+            <div style="margin-bottom:8px;">
+              <span style="color:#01a79d; font-weight:bold;">Source of Income</span><br/>
+              <select style="width:100%; padding:9px; border:1px solid #cfe7e6; border-radius:6px;">
+                <option>Employed</option>
+                <option>Student</option>
+                <option>Self Employed</option>
+                <option>Unemployed</option>
+              </select>
+            </div>
+            <div style="margin-bottom:8px;">
+              <span style="color:#01a79d; font-weight:bold;">Upload Profile Picture</span><br/>
+              <input type="file" />
+            </div>
+          </div>
+
+          <div style="flex:1;">
+            <div style="margin-bottom:8px;">
+              <span style="color:#01a79d; font-weight:bold;">Hobbies</span><br/>
+              <label><input type="checkbox" /> Music</label>
+              <label style="margin-left:8px;"><input type="checkbox" /> Sports</label>
+              <label style="margin-left:8px;"><input type="checkbox" /> Travel</label>
+              <label style="margin-left:8px;"><input type="checkbox" /> Movies</label>
+            </div>
+            <div style="margin-bottom:8px;">
+              <span style="color:#01a79d; font-weight:bold;">Income</span><br/>
+              <input type="range" min="0" max="100" value="20" style="width:86%;" />
+              <span style="display:inline-block; padding:6px 10px; background:#e9f6f5; border:1px solid #cfe7e6; border-radius:6px; font-weight:bold;">20K</span>
+            </div>
+            <div style="margin-bottom:8px;">
+              <span style="color:#01a79d; font-weight:bold;">Age</span><br/>
+              <input type="number" value="18" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div style="margin-bottom:14px;">
+          <label style="color:#01a79d; font-weight:bold;">Bio</label><br/>
+          <textarea rows="5" style="width:100%; padding:10px; border:1px solid #cfe7e6; border-radius:6px;"></textarea>
+        </div>
+
+        <!-- Button -->
+        <div style="padding:6px 0 8px 0; text-align:right;">
+          <button type="button" style="background:#27c2b8; color:#fff; border:0; padding:10px 18px; border-radius:8px; cursor:pointer;">Create</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

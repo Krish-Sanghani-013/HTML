@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Darshan Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: lightblue; /* page background */
+    }
+
+    /* Header */
+    .header {
+      background: purple;
+      color: white;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+
+    /* Content area */
+    .content {
+      background: orange;
+      padding: 15px;
+      overflow: hidden; /* clear floats */
+    }
+
+    /* Left column (entries) */
+    .entries {
+      float: left;
+      width: 65%;
+    }
+
+    .entry {
+      background: black;
+      color: white;
+      height: 30px;
+      line-height: 30px;
+      margin: 10px 0;
+      padding-left: 10px;
+    }
+
+    /* Right column (sidebar) */
+    .sidebar {
+      float: right;
+      width: 30%;
+      background: black;
+      color: white;
+      height: 120px;
+      text-align: center;
+      line-height: 120px;
+    }
+
+    /* Footer */
+    .footer {
+      background: darkblue;
+      color: white;
+      text-align: left;
+      padding-left: 10px;
+      height: 30px;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+    <div class="page">page</div>
+
+  <div class="header">Header</div>
+
+  <div class="content">
+    <!-- Left side entries -->
+     <div class="content">content</div>
+    <div class="entries">
+      <div class="entry">Entry</div>
+      <div class="entry">Entry</div>
+      <div class="entry">Entry</div>
+    </div>
+
+    <!-- Right side sidebar -->
+    <div class="sidebar">Sidebar</div>
+  </div>
+
+  <div class="footer">©Darshan University-Rajkot</div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: lightblue;
+        }
+        .container {
+            width: 400px;
+            margin: 10px auto;
+            margin-top: 40px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 30px aqua;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: bold;
+            color: teal;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 95%;
+            padding: 8px;
+            margin: 6px 0 12px 0;
+            border: 2   px solid rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .row {
+            display: inline-block;
+            width: 48%;
+        }
+        .right {
+            float: right;
+        }
+        .slider-value {
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+            color: teal;
+        }
+        .create-btn {
+            width: 100%;
+            padding: 10px;
+            background: teal;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .create-btn:hover {
+            background: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Create Account</h2>
+        <form>
+            <div class="row">
+                <label>First name *</label><br>
+                <input type="text" placeholder="enter your first name" required>
+            </div>
+            <div class="row right">
+                <label>Last name</label><br>
+                <input type="text" placeholder="enter your last name" required>
+            </div><br>
+
+            <label>Email *  </label><br>
+            <input type="email" placeholder="enter your email" required><br>
+
+            <div class="row">
+                <label>Password *</label><br>20K
+                <input type="password" placeholder="enter your password" required>
+            </div>
+            <div class="row right">
+                <label>Confirm Password *</label><br>
+                <input type="password" placeholder="enter your password again" required>
+            </div><br>
+
+            <div class="row">
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" required> Male
+                <input type="radio" name="gender" required> Female
+            </div>
+            <div class="row right">
+                <label>Hobbies:</label><br>
+                <input type="checkbox"> Music
+                <input type="checkbox"> Sports
+                <input type="checkbox"> Travel
+                <input type="checkbox"> Movies
+            </div><br><br>
+
+            <label>Source of Income</label><br>
+            <select required>
+                <option value="">Select...</option>
+                <option value="Employed">Employed</option>
+                <option value="Student">Student</option>
+                <option value="Business">Business</option>
+            </select><br>
+
+            <label>Income</label><br>
+            <input type="range" id="incomeRange" min="0" max="100000" value="20000" required>
+            <span class="slider-value" id="incomeValue">20K</span><br><br>
+
+            <div class="row">
+                <label>Upload Profile Picture</label><br>
+                <input type="file" required>
+            </div>
+            <div class="row right">
+                <label>Age</label><br>
+                <input type="number" value="18" required>
+            </div><br>
+
+            <label>Bio</label><br>
+            <textarea rows="3" required></textarea><br>
+
+            <button type="submit" class="create-btn">Create</button>
+        </form>
+    </div>
+
+    <script>
+        const range = document.getElementById('incomeRange');
+        const value = document.getElementById('incomeValue');
+        function formatIncome(val) {
+            if (val >= 1000) return (val/1000) + 'K';
+            return val;
+        }
+        range.addEventListener('input', function() {
+            value.textContent = formatIncome(this.value);
+        });
+    </script>
+</body>
+</html>
