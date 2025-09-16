@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+        }
+        .style-firstline::first-line {
+            color: green;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .style-firstletter::first-letter {
+            color: orange;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .change-bgselect::selection {
+            background-color: yellow;
+            color: black;
+        }
+        .special-style {
+            background-color: lightblue;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .special-style:hover {
+            background-color: darkblue;
+            color: white;
+            transition: 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.goindigo.in/">Go Indigo</a>
+    <br><br><br><br><br>
+    <p class="style-firstline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam illum quibusdam accusamus dicta aspernatur autem odit deserunt sunt maiores veniam modi itaque, distinctio accusantium.</p>
+    <br><br><br><br><br>
+    <p class="style-firstletter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam illum quibusdam accusamus dicta aspernatur autem odit deserunt sunt maiores veniam modi itaque, distinctio accusantium.</p>
+    <br><br><br><br><br>
+    <p class="change-bgselect">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae non quae nesciunt dolores facere ad autem! Dignissimos porro corporis laudantium dolore possimus ex laborum ab.</p>
+    <br><br><br><br><br>
+    <button class="special-style">I change style when hover over me</button>
+</body>
+</html>

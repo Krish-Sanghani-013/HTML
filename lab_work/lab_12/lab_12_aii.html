@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        background-color: black;
+        color: white;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        animation-name: changeLocation;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+        @keyframes changeLocation {
+        0%   { left: 50px;  top: 50px; }
+        25%  { left: 500px; top: 50px; }
+        50%  { left: 500px; top: 500px; }
+        75%  { left: 50px;  top: 500px; }
+        100% { left: 50px;  top: 50px; }
+    }
+    .box2{
+        background-color: red;
+        color: white;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        animation-name: changeLocation2;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+    @keyframes changeLocation2 {
+        0%   { left: 300px;  top: 300px; }
+        25%  { left: 700px; top: 300px; }
+        50%  { left: 700px; top: 700px; }
+        75%  { left: 300px;  top: 700px; }
+        100% { left: 300px;  top: 300px; }
+    }
+    .box3{
+        background-color: blue;
+        color: white;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 550px;
+        top: 550px;
+        animation-name: changeLocation3;
+        animation-duration: 4s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    @keyframes changeLocation3 {
+        0%   { left: 550px;  top: 550px; }
+        50%  { left: 1500px; top: 550px; }
+        100% { left: 550px;  top: 550px; }
+    }
+    .box4{
+        background-color: green;
+        color: white;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 800px;
+        top: 800px;
+        animation-name: changeLocation4;
+        animation-duration: 2s;
+        animation-delay: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes changeLocation4 {
+        0%   { left: 800px;  top: 800px; }
+        50%  { left: 800px; top: 1200px; }
+        100% { left: 800px;  top: 800px; }
+    }
+</style>
+<body>
+    <div class="box">Box</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="box2">Box 2</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="box3">box 3</div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="box4">box 4</div>
+</body>
+</html>

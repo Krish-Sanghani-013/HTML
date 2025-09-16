@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alea Portfolio</title>
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: linear-gradient(90deg, #a259ff, #6a11cb);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd6ff;
+    }
+    .btn {
+      background: #6a11cb;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #a259ff;
+      transform: scale(1.05);
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 10%;
+    }
+    .hero h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .hero h1 span {
+      color: #6a11cb;
+    }
+    .hero img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      margin: 20px 0;
+      object-fit: cover;
+      border: 5px solid #6a11cb;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    /* Floating animation for profile */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      gap: 150px;
+      margin-top: -20px;
+    }
+    .tag {
+      background: linear-gradient(90deg, #a259ff, #6a11cb);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    /* Social Links */
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px 0;
+      background: #1b1b2f;
+    }
+    .socials a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+    .socials a:hover {
+      color: #a259ff;
+    }
+
+    /* About Section */
+    .about {
+      padding: 60px 10%;
+      background: linear-gradient(180deg, #a259ff, #6a11cb);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .about h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .about p {
+      max-width: 600px;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    /* Stats */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+    .stat {
+      background: linear-gradient(145deg, #6a11cb, #a259ff);
+      padding: 20px 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .stat:hover {
+      transform: translateY(-10px);
+    }
+    .stat h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .stat p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .tags {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Alea</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+    </nav>
+    <button class="btn">Let’s Talk</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>I’m <span>Dharmik Vasiyani</span>. I will create a web design that can give value to your company</h1>
+    <img src="/assets/img/Dharmik_Vasiyani.jpg.jpg" alt="Profile">
+    <div class="tags">
+      <div class="tag">UI/UX Designer <br> 4 Years</div>
+      <div class="tag">Web Developer <br> 2 Years</div>
+    </div>
+  </section>
+
+  <!-- Social Links -->
+  <div class="socials">
+    <a href="#">dribbble</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Medium</a>
+    <a href="#">Behance</a>
+  </div>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me.</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+    </p>
+    <div class="stats">
+      <div class="stat">
+        <h3>4K</h3>
+        <p>Projects Done</p>
+      </div>
+      <div class="stat">
+        <h3>2K</h3>
+        <p>Happy Clients</p>
+      </div>
+      <div class="stat">
+        <h3>9K</h3>
+        <p>Clients on Worldwide</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
