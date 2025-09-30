@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Essentials</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        background-image: url(/assets/img/bg.png);
+        background-size: cover;
+        backdrop-filter: blur(150px);
+      }
+
+      .product-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .product-image {
+        background: #f3cdd2;
+        height: 200px;
+        border-radius: 8px;
+        margin-bottom: 16px;
+        background-image: url(/assets/img/bg.png);
+        background-size: contain;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+
+      .rating {
+        color: #888;
+        margin-bottom: 8px;
+      }
+
+      .price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      .selectors label {
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+      }
+
+      .selectors select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .tabs button {
+        flex: 1;
+        padding: 10px;
+        margin: 0 4px;
+        border: none;
+        border-radius: 6px;
+        background: #eee;
+        cursor: pointer;
+      }
+
+      .tabs .active {
+        background: #f3cdd2;
+        font-weight: bold;
+      }
+
+      .cart-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .cart-section input {
+        width: 60px;
+        padding: 6px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+
+      .add-to-cart {
+        background: #e48ca4;
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="product-image"></div>
+      <h1>College Essentials</h1>
+      <p class="rating">⭐ 4.8 (428 reviews)</p>
+      <p class="price">$195</p>
+
+      <div class="selectors">
+        <label>Quality:</label>
+        <select>
+          <option>Basic</option>
+          <option>Premium</option>
+        </select>
+
+        <label>Style:</label>
+        <select>
+          <option>Minimal</option>
+          <option>Bohemian</option>
+          <option>Floral</option>
+        </select>
+      </div>
+
+      <div class="tabs">
+        <button class="active">What's Inside</button>
+        <button>Reviews</button>
+        <button>FAQs</button>
+      </div>
+
+      <div class="cart-section">
+        <label for="quantity">Qty:</label>
+        <input type="number" id="quantity" value="1" min="1" />
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>
